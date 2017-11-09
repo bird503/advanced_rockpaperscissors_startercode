@@ -23,8 +23,12 @@
 
 
 //FUNCTIONS
-
-
+$( document ).ready(function() {
+        $("#3").click(function() {
+           var heroChoice = $("#heroChoice").val();
+           $("#choiceDisplay").append(heroChoice);
+        });
+});
 
 // DOCUMENT READY FUNCTION
 
