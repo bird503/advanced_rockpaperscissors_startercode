@@ -3,14 +3,14 @@
 
   <head>
     <title>RPS Game</title>
-      <!-- Link CSS here -->
-    <link rel="stylesheet" href="css/style.css">
+      <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
       <!-- Link JQuery here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Link Javascript File here -->
     <script src="js/script.js"></script>
-      <!-- Latest compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+      <!-- Link CSS here -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -30,10 +30,18 @@
       <img class="" src="http://scienceblogs.com/startswithabang/files/2009/08/154164029_590a6dc74f.jpg">
       <img class="" src="http://www.clker.com/cliparts/2/2/9/a/1194984444165799079scissors_forbici_franc_.svg.hi.png">
       
-      <input></input> 
-      <button>Shoot!</button>
+      <input id="heroChoice"></input> 
+      <button id="3">Shoot!</button>
       
-    
+      <div class="row">
+        <div class="col-sm-4" id="heroChoiceDisplay"></div>
+        <div class="col-sm-4" id="judgementChoiceDisplay"></div>
+        <div class="col-sm-4" id="computerChoiceDisplay"></div>
+      </div>
+        
+      
+      
+      
     </div>
 
   </body>

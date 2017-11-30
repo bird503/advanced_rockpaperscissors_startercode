@@ -17,18 +17,32 @@
 // *************************** YOUR CODE BELOW *******************************
 //******************TEST EARLY AND OFTEN USING console.log() ******************
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
+// DOCUMENT READY FUNCTION
+$(document).ready(function() {
 
-//GLOBAL VARIABLES
-
-
+//ARRAY OF CHOICES
+var allChoices = ["rock",
+        "paper",
+        "scissors"
+        ];
 
 //FUNCTIONS
-$( document ).ready(function() {
+//HERO CHOICE
         $("#3").click(function() {
            var heroChoice = $("#heroChoice").val();
-           $("#choiceDisplay").append(heroChoice);
+           console.log(heroChoice);
+           $("#heroChoiceDisplay").text(heroChoice);
+
+//COMPUTER CHOICE
+        
+        var choiceRoll = Math.floor(Math.random()*3);
+        console.log(choiceRoll);
+        console.log(allChoices[choiceRoll]);
+        var computerChoice = allChoices[choiceRoll];
+        $("computerChoiceDisplay").text(computerChoice);
         });
 });
-
-// DOCUMENT READY FUNCTION
-
+//IF HERO TROLLING
+        if (heroChoice && allChoices) {
+                $("heroChoiceDisplay").text("Get To The Point Already!");
+        } 
