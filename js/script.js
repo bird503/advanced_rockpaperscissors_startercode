@@ -39,10 +39,33 @@ var allChoices = ["rock",
         console.log(choiceRoll);
         console.log(allChoices[choiceRoll]);
         var computerChoice = allChoices[choiceRoll];
-        $("computerChoiceDisplay").text(computerChoice);
-        });
+        $("#computerChoiceDisplay").text(computerChoice);
+//CONDITIONAL TIES
+        if(heroChoice === "rock" && computerChoice === "rock") {
+                $("#judgementChoiceDisplay").text("Nobody!");
+        } else if (heroChoice === "paper" && computerChoice === "paper"){
+                $("#judgementChoiceDisplay").text("Nobody!");
+        } else if (heroChoice === "scissors" && computerChoice === "scissors"){
+                $("#judgementChoiceDisplay").text("Nobody!");
+//CONDITIONAL HERO WINS
+        } else if (heroChoice === "rock" && computerChoice === "scissors"){
+                $("#judgementChoiceDisplay").text("HERO WINS!");
+        } else if (heroChoice === "paper" && computerChoice === "rock"){
+                $("#judgementChoiceDisplay").text("HERO WINS!");
+        } else if (heroChoice === "scissors" && computerChoice === "paper"){
+                $("#judgementChoiceDisplay").text("HERO WINS!");
+//CONDITIONAL COMPUTER WINS
+        } else if (heroChoice === "rock" && computerChoice === "paper"){
+                $("#judgementChoiceDisplay").text("COMPUTER WINS!");
+        } else if (heroChoice === "paper" && computerChoice === "scissors"){
+                $("#judgementChoiceDisplay").text("COMPUTER WINS!");
+        } else if (heroChoice === "scissors" && computerChoice === "rock"){
+                $("#judgementChoiceDisplay").text("COKMPUTER WINS!");
+        }
+    });
 });
 //IF HERO TROLLING
-        if (heroChoice && allChoices) {
-                $("heroChoiceDisplay").text("Get To The Point Already!");
-        } 
+        //if(heroChoice === "rock" && computerChoice === "rock") {
+               //$("#judgementChoiceDisplay").text("WAW WEALLY!! STOP TROLLING!!");
+        //}
+        
